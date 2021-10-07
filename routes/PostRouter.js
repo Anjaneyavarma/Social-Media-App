@@ -29,7 +29,7 @@ router.get("/", async (req,res)=>{
 });
 
 //update a post
-router.post("/:id", async (req,res)=>{
+router.post("/update/:id", async (req,res)=>{
     try{
         const post = await Post.findById(req.params.id);
         if(post.userId === req.body.userId){
@@ -40,8 +40,48 @@ router.post("/:id", async (req,res)=>{
         }
     }catch(err){
         res.status(500).json(err)
+    }  
+})
+
+//delete post
+router.post("/delete/:id", async (req,res)=>{
+    try{
+        const post = await Post.findById(req.params.id);
+        if(post.userId === req.body.userId){
+            await post.deleteOne();
+            res.status(200).send({message:"post has been deleted"})
+        }else{
+            res.status(404).send({message:"you can delete only your post"})
+        }
+    }catch(err){
+        res.status(500).json(err)
     }
-    
+})
+
+//like and dislike a post
+router.post("/:id/like", async (req,res)=>{
+    try{
+        const post = await Post.findById(req.params.id);
+        if(!post.likes.includes(req.body.userId)){
+            await post.updateOne({$push: {likes: req.body.userId}})
+            res.status(200).send({messgae: "The post has been liked"})
+        }else{
+            await post.updateOne({$pull:{likes:req.body.userId}})
+            res.status(200).send({message:"the post has been disliked"})
+        }   
+    }catch(err){
+        res.status(500).json(err)
+    }
+})
+
+//get a post
+router.get("/:id", async (req,res)=>{
+    try{
+        const post = await Post.findById(req.params.id);
+        res.status(200).send(post)
+    }catch(err){
+        res.status(500).json(err)
+    }
 })
 
 module.exports = router;
