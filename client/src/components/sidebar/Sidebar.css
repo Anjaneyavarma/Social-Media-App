@@ -1,0 +1,41 @@
+
+.sidebar{
+    flex: 1;
+    height: calc(100vh - 50px);
+    background-color: #ffffff;
+    overflow-y: scroll;
+    position: sticky;
+}
+
+.sidebar-container{
+    padding: 20px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+}
+
+.sidebarlists{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.sidebar-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.sidebar-icon{
+    margin-right: 20px;
+    /* background: linear-gradient(to right, #1D82E9, #4BC8B8); */
+    color: #1D82E9;
+}

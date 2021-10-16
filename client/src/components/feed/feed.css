@@ -1,0 +1,7 @@
+.feed{
+    flex: 1.5;
+    height: calc(100vh - 50px);
+    padding: 20px;
+    overflow-y: scroll;
+    position: sticky;
+}

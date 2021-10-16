@@ -1,0 +1,102 @@
+.post{
+    margin-top: 15px;
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15); 
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+    border-radius: 20px;
+}
+
+.post-top{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;   
+}
+
+.hor-icon:hover{
+    background-color: #E3E6E9;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.post-details{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.name{
+    margin-left: 15px;
+    font-size: 16px;
+}
+.time{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.post-time{
+    display: flex;
+    align-items: center;
+}
+.public-icon{
+    margin-left: 5px;
+    font-size: 15px !important;
+}
+
+.psot-description{
+    font-size: 14px;
+    padding: 15px;
+}
+
+.post-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.post-bottom{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.post-like{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.post-like p{
+    margin-left: 10px;
+}
+.post-comments{
+    cursor: pointer;
+}
+.post-bot{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bot-icons{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.icons p{
+    margin-left: 10px;
+}
