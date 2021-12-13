@@ -1,0 +1,36 @@
+.info{
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    padding: 20px;
+}
+.img-container{
+    height: 470px;
+    position: relative;
+}
+.cover-img{
+    border-radius: 20px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 250px;
+}
+.information{
+    text-align: center;
+}
+.share-box{
+    margin-top: 20px;
+    padding: 0px 10% 0 10%;
+}

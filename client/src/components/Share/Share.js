@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Share.css";
-import profile1 from '../../assets/profile1.jpeg';
+import profile1 from '../../assets/profile1.png';
 import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
 import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import MoodIcon from '@mui/icons-material/Mood';

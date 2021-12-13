@@ -3,7 +3,7 @@ import "./Navbar.css";
 import PersonIcon from '@mui/icons-material/Person';
 import SearchIcon from '@mui/icons-material/Search';
 import ChatIcon from '@mui/icons-material/Chat';
-import profile1 from '../../assets/profile1.jpeg'
+import profile1 from '../../assets/profile1.png'
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 
 export default function Navbar(){
